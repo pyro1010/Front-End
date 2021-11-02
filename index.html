@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <!--Essa tag serve para explicitar ao navegador qual o tipo
+    de arquivo que está sendo aberto-->
+<html lang="pt-br">
+    <!--Essa tag serve para identificar a linguagem principal
+    utilizada no site. Isso ajuda no SEO-->
+<head>
+    <meta charset="UTF-8">
+    <!--Essa tag serve para identificar qual o tipo de escrita
+    está sendo utiizado, como por exemplo o alfabeto latino-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Mania</title>
+    <!--O Title é o nome da página que ficará disponível
+    na aba do navegador-->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="container-grid posicionamento-header sup">
+            <a href="#"><img src="Imagens/Logo-red.png" alt="Logo do site game mania" class="container-logo"></a>
+            <!-- Aqui, o que acontece e que foi feito um link com a tag 'a', mas que
+                tem dentro de si uma imagem. Dessa maneira e criada uma imagem linkada
+                com alguma pagina, por exemplo, a home do site. Alem disso, o atalho
+                'control espaço' ajudou na hora de colocar a imagem no source.
+                Importante destacar que aqui tambem e possivel colocar a URL de alguma img
+                hospedada em site.
+                Já o alt é uma atributo que serve para descricao da imagem, o que ajuda na
+                acessibilidade-->
+                <!-- A tag de imagem vem com dois atributos: src (source, origem) e 
+                alt, que e a descricao da imagem.  -->
+            <a href="#"><img src="Imagens/Barra-red.png" alt="barra de pesquisa"></a>
+            <a href="#"><img src="Imagens/Login-red.png" alt="icone de login"></a>
+            <!--A tag 'a' faz referencia a um link que redireciona
+            para outras páginas-->
+            <!---A tag 'nav' define o espaco do navbar, ou menu-->
+        </div>
+        <nav class="container-grid-navbar posicionamento-navbar inf menu">
+            <!-- para resolver a questão da tipografia que não encontrei,
+            posso tentar usar o png dos itens da nav e linkar eles-->
+            <a href="#">Jogos</a>
+            <a href="#">Console</a>
+            <a href="#">Notebooks</a>
+            <a href="#">Monte seu pc</a>
+            <a href="#">Geek</a>
+            <!-- Importante notar que os textos não devem de estar em caixa alta,
+            pois o interpretador de texto de acessibilidade vai entender que isso
+            e uma sigla, e nao uma palavra-->
+            <!-- Professor disse que aqui eu deveria fazer o header mas
+            com duas 'divs', para que possa colocar a logo e 
+            também a barra de pesquisa -->
+        </nav>
+    </header>   
+    <div class="banner">
+        <div class="container-grid itens-banner texto-banner">
+            <!-- essa class 'container-grid' foi criada antes e está sendo reaproveitada
+            nessa parte do código para alinhar o texto do banner em relação ao corpo do site.-->
+            <!-- a class 'itens-banner' foi criada para colocar o conteúdo
+            dessa div filha atual dentro do espaço criado pelo 'container-grid'-->
+            <!-- <div class="texto-banner"> -->
+                <div class="texto-discover">
+                    <h1>DiscOver</h1>
+                </div>    
+                <div class="texto-meio">
+                    <p>Cansou de jogar sempre o mesmo jogo?Assine o nosso plano mensal e tenha acesso online a dezenas de novos jogos para as plataformas mais utilizadas.</p>
+                </div>
+                <div class="texto-link">
+                    <a href="#">Venha descobrir o melhor dos games</a>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div> 
+    </body>
+    </html>
+
+    <!-- Diferença entre 'class' e 'id' é que class pode ser reutilizada
+            
+em outras partes do código, já o id não. Por exemplo, a class 'container'
+poderia ser usada em outras tags durante o código, Já um id 'container'
+só poderia ser usado naquela tag exclusiva, como um CPF daquela tag -->
+
